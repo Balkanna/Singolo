@@ -1,13 +1,8 @@
-﻿body {
+body {
     margin: 0 auto;
     max-width: 1020px;
     min-width: 320px;
 }
-
-/**, h1, h2, h3 {
-    margin:0;
-    padding:0;
-}*/
 
 header {
     background-color: #2d303a;
@@ -62,7 +57,7 @@ header {
 .header-navigation__item::after {
     position: relative;
     bottom: 1px;
-    content: "•";
+    content: "�";
     font-size: 5px;
     text-align: center;
     color: rgb(73, 78, 98);
