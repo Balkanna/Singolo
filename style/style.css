@@ -39,7 +39,7 @@ body {
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Verdana sans-serif;
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ body {
 .header-navigation__item::after {
     position: relative;
     bottom: 1px;
-    content: "•";
+    content: "ï¿½";
     font-size: 5px;
     text-align: center;
     color: rgb(73, 78, 98);
