@@ -11,52 +11,66 @@
 <body>
     <header class="container">
         <div class="header-wrapper">
+            <div class="header__burger">
+                <button id="header__burger-button" type="button"></button>
+                <nav class="header__burger-nav">
+                    <h1 class="burger-logo">singolo<span class="header__logo-symbol">*</span></h1>
+                    <a href="#home" class="active burger-menu__link">home</a>
+                    <a href="#services" class="burger-menu__link">services</a>
+                    <a href="#portfolio" class="burger-menu__link">portfolio</a>
+                    <a href="#about" class="burger-menu__link">about</a>
+                    <a href="#contact" class="burger-menu__link">contact</a>
+                </nav>
+                <div class="header__burger-overlay"></div>
+            </div>
             <div class="header__logo-container">
-                <h1 class="header__logo">SINGOLO<span class="header__logo-symbol">*</span></h1>
+                <h1 class="header__logo">singolo<span class="header__logo-symbol">*</span></h1>
             </div>
             <nav class="header-navigation">
                 <ul class="header-navigation__row">
                     <li class="header-menu">
-                        <a class="header-navigation__item" href="#">home</a>
+                        <a class="header-navigation__item" href="#home">home</a>
                     </li>
                     <li class="header-menu">
-                        <a class="header-navigation__item" href="#">services</a>
+                        <a class="header-navigation__item" href="#services">services</a>
                     </li>
                     <li class="header-menu">
-                        <a class="header-navigation__item" href="#">portfolio</a>
+                        <a class="header-navigation__item" href="#portfolio">portfolio</a>
                     </li>
                     <li class="header-menu">
-                        <a class="header-navigation__item" href="#">about</a>
+                        <a class="header-navigation__item" href="#about">about</a>
                     </li>
                     <li class="header-menu">
-                        <a class="header-navigation__item notpoint" href="#">contact</a>
+                        <a class="header-navigation__item notpoint" href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="home">
         <div class="slider-wrapper">
             <div class="slider__content">
-                <a class="slider__button-prev" href="#"></a>
-                <div class="vertical-phone">
-                    <img src="./assets/img/base-vertical-phone.png" alt="vertical-phone-base" class="vertical-phone__base">
-                    <div class="vertical-phone__screen"></div>
-                    <img src="./assets/img/shadow-vertical-phone.png" alt="vertical-phone-shadow" class="vertical-phone__shadow">
+                <div class="slider__phone">
+                    <div class="slider__vertical-phone">
+                        <img src="./assets/img/base-vertical-phone.png" alt="vertical-phone-base" class="vertical-phone__base">
+                        <div class="vertical-phone__screen"></div>
+                    </div>
+                    <div class="slider__horizontal-phone">
+                        <img src="./assets/img/base-horizontal-phone.png" alt="horizontal-phone-base" class="horizontal-phone__base">
+                        <div class="horizontal-phone__screen"></div>
+                    </div>
+                    <a class="slider__button-prev button"></a>
+                    <a class="slider__button-next button"></a>
                 </div>
-                <div class="horizontal-phone">
-                    <img src="./assets/img/base-horizontal-phone.png" alt="horizontal-phone-base" class="horizontal-phone__base">
-                    <div class="horizontal-phone__screen"></div>
-                    <img src="./assets/img/shadow-horizontal-phone.png" alt="horizontal-phone-shadow" class="horizontal-phone__shadow">
-                </div>
-                <a class="slider__button-next" href="#"></a>
             </div>
         </div>
-        <div class="services-wrapper">
+        <div class="services-wrapper" id="services">
             <div class="our-services__content">
                 <h2>our services</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+                </p>
                 <div class="services">
                     <div class="card">
                         <div class="card__icon"><img src="./assets/img/pen.png" alt="card-pen"></div>
@@ -89,7 +103,7 @@
                     <div class="card">
                         <div class="card__icon"><img src="./assets/img/bublle.png" alt="card-bublle"></div>
                         <div class="card__content">
-                            <h4 class="card__title">24/ 7 Support</h4>
+                            <h4 class="card__title">24 / 7 Support</h4>
                             <p class="card__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
                         </div>
                     </div>
@@ -103,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-wrapper">
+        <div class="portfolio-wrapper" id="portfolio">
             <div class="portfolio__content">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -139,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <section class="about-us-wrapper">
+        <section class="about-us-wrapper" id="about">
             <h2 class="about-us__title">About Us</h2>
             <p class="about-us__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="about-us__info">
@@ -184,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <div class="quote-wrapper">
+        <div class="quote-wrapper" id="contact">
             <div class="quote__content">
                 <h2 class="quote__info-title">Get a Quote</h2>
                 <p class="quote__text">
@@ -198,12 +212,12 @@
                         <input type="email" name="email" value="" required placeholder="Email (Required)">
                         <input type="text" name="subject" value="" placeholder="Subject">
                         <textarea name="text" rows="13" placeholder="Describe your project in detail..."></textarea>
-                        <input type="submit" name="submit" value="Send" class="submit">
+                        <input type="submit" name="submit" value="SEND" class="submit">
                     </form>
                     <div class="quote__information">
                         <h3 class="quote__information-title">Contact Information</h3>
                         <p class="quote__information-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-                        <p class="quote__information-address item">Elm St. 14/05 Lost City</p>
+                        <p class="quote__information-address">Elm St. 14/05 Lost City</p>
                         <a class="quote__information-phone item" href="./tel:035283318635">03528 331 86 35</a>
                         <a class="quote__information-email item" href="./mailto:info@singolo.com">info@singolo.com</a>
                     </div>
@@ -224,5 +238,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
