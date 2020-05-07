@@ -11,5 +11,5 @@ function showBurger() {
     burgerBtn.classList.toggle('burger-menu__active');
     burgerNav.classList.toggle('burger-nav__active');
     overlay.classList.toggle('overlay-active');
-};
+}
 
