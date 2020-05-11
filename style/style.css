@@ -76,8 +76,7 @@ a {
 .open .burger-logo {
     text-transform: uppercase;
     letter-spacing: -0.5px;
-    padding: 14px 0 220px 110px;
-    margin: 0;
+    margin: 14px 0 220px 110px;
 }
 
 .open .header__burger-nav {
