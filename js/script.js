@@ -8,7 +8,7 @@ document
 });
 
 // slider
-let slide = document.querySelectorAll('.slider__phone .phone__slide');
+const slide = document.querySelectorAll('.slider__phone .phone__slide');
 let currentSlide = 0;
 
 function showSlider() {
@@ -24,8 +24,15 @@ function showSlider() {
         currentSlide++;
     }
 }
-document.querySelector('.slider__button-prev').onclick = showSlider;
-document.querySelector('.slider__button-next').onclick = showSlider;
+
+document
+  .querySelector('.slider__button-prev')
+  .addEventListener('click', showSlider);
+
+document
+  .querySelector('.slider__button-next')
+  .addEventListener('click', showSlider);
+
 
 function submitQuoteForm(event) {
     event.preventDefault();
