@@ -55,13 +55,18 @@
         <div class="slider-wrapper">
             <div class="slider__content">
                 <div class="slider__phone">
-                    <div class="slider__vertical-phone">
-                        <img src="./assets/img/base-vertical-phone.png" alt="vertical-phone-base" class="vertical-phone__base">
-                        <div class="vertical-phone__screen"></div>
+                    <div class="phone__slide first">
+                        <div class="slider__vertical-phone">
+                            <img src="./assets/img/base-vertical-phone.png" alt="vertical-phone-base" class="vertical-phone__base">
+                            <div class="vertical-phone__screen"></div>
+                        </div>
+                        <div class="slider__horizontal-phone">
+                            <img src="./assets/img/base-horizontal-phone.png" alt="horizontal-phone-base" class="horizontal-phone__base">
+                            <div class="horizontal-phone__screen"></div>
+                        </div>
                     </div>
-                    <div class="slider__horizontal-phone">
-                        <img src="./assets/img/base-horizontal-phone.png" alt="horizontal-phone-base" class="horizontal-phone__base">
-                        <div class="horizontal-phone__screen"></div>
+                    <div class="phone__slide second">
+                        <img src="./assets/img/slide_2.png" alt="slide2" class="image__second-slide">
                     </div>
                     <a class="slider__button-prev button"></a>
                     <a class="slider__button-next button"></a>
@@ -211,7 +216,7 @@
                     tellus ac cursus commodo, tortor mauris condimentum nibh.
                 </p>
                 <div class="quote__contact">
-                    <form class="quote__form" action="/" method="post">
+                    <form class="quote__form" id='quote-form'action="/" method="post">
                         <input type="text" name="name" value="" required placeholder="Name (Required)">
                         <input type="email" name="email" value="" required placeholder="Email (Required)">
                         <input type="text" name="subject" value="" placeholder="Subject">
@@ -232,7 +237,7 @@
     <footer>
         <div class="footer-wrapper">
             <div class="copyright">
-                <p>&copy; Copyright 2013</p>
+                <p>&copy; Copyright 2020</p>
             </div>
             <div class="social-buttons">
                 <a class="social-buttons__item icon-fb" href="www.facebook.com" target="_blank"></a>
